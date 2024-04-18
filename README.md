@@ -17,18 +17,18 @@ Axios
 Project Structure:
 movie-recommendations/
   ├── src/
-  │   ├── MovieRecommendations.js
+  │   ├── MovieRecommendations.js/
   │   ├── components/
-  │   │   └── Movie.jsx
+  │   │   └── Movie.jsx/
   │   ├── services/
-  │   │   └── movieApi.js
+  │   │   └── movieApi.js/
   │   ├── utils/
-  │   │   └── dateTime.js
-  │   │   └── filterData.js
-  │   │   └── index.js
-  │   │   └── validation.js
-  │   └── MovieRecommendations.test.js
-  ├── package.json
+  │   │   └── dateTime.js/
+  │   │   └── filterData.js/
+  │   │   └── index.js/
+  │   │   └── validation.js/
+  │   └── MovieRecommendations.test.js/
+  ├── package.json/
   └── README.md 
 
 Explanation:
