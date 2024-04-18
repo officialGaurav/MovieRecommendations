@@ -3,8 +3,6 @@ export const convertTimeStampToReadableFormat = (timestamp) => {
     // Create a new Date object from the timestamp
     const date = new Date(timestamp);
 
-    console.log(JSON.stringify(date));
-
     // Extract hours and minutes
     const hours = date.getHours();
     const minutes = date.getMinutes();

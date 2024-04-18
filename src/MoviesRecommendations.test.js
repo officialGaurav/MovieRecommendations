@@ -7,7 +7,6 @@ describe("MovieRecommendations component", () => {
   it("should render the title", () => {
     render(<MovieRecommendations />);
     const title = screen.getByText("Movie Recommendations");
-    console.log(" -- ", title);
     expect(title).toBeInTheDocument();
   });
 

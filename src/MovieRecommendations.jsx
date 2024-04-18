@@ -16,7 +16,7 @@ function MovieRecommendations() {
   useEffect(() => {
     try {
       fetchMovies().then((data) => setMoviesData(data));
-    } catch (error) {
+;    } catch (error) {
       console.error("Error fetching movies:", error);
       setError("An error occurred while fetching movie data.");
     }
@@ -40,9 +40,7 @@ function MovieRecommendations() {
     }
 
     try {
-      console.log("moviesData", moviesData);
       const recommendations = await filterMovies(moviesData, genre, time);
-      console.log("recommendations", recommendations);
       setRecommendations(recommendations);
     } catch (error) {
       console.error("Error fetching recommendations movies:", error);
