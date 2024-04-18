@@ -11,6 +11,7 @@ export const filterMovies = (movies, genre, time) => {
   const minTime = newDate.setTime(newDate.getTime() + 30 * 60 * 1000);
   return movies
     .filter((movie) => {
+      delete movie.showingAt;
       return movie.genres.includes(genre);
     })
     .filter((movie) => {
@@ -31,8 +32,11 @@ export const filterMovies = (movies, genre, time) => {
       const ss = showtimes.filter((showtime) => showtime >= minTime);
       showingAt.push(ss);
       const result = showtimes.find((showtime) => showtime >= minTime);
-      movie.showingsAt = result;
+      movie.showingAt = result;
       return movie;
+    })
+    .filter((movie) => {
+      return movie.showingAt;
     })
     .sort((a, b) => b.rating - a.rating);
 };

@@ -6,7 +6,7 @@ const Movie = ({ movie }) => {
     <li key={movie.name}>
       <h3>{movie.name}</h3>
       <p>Rating: {movie.rating}</p>
-      <p>Showing at {convertTimeStampToReadableFormat(movie.showingsAt)}</p>
+      <p>Showing at {convertTimeStampToReadableFormat(movie.showingAt)}</p>
     </li>
   );
 };

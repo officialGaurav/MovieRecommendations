@@ -2,7 +2,7 @@
 
 export const fetchMovies = async () => {
   //return await axios.get(API_URL);
-  return fetch('src/services/MovieData.json')
+  return fetch('src/data/MovieData.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
