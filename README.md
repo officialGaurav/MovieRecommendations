@@ -54,9 +54,18 @@ Explanation:
   
 Running the Application:
 - Clone or download the project
-- Install dependencies using npm install
-- Start the development server using npm run dev
-- Test using npm test
+- Install dependencies using 
+```
+npm install
+```
+- Start the development server using 
+```
+npm run dev
+```
+- Test using 
+```
+npm test
+```
 
 Enter a genre in the "Genre" field.
 Enter a time in HH:MM format (24-hour clock) in the "Time" field.
