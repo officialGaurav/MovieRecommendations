@@ -1,4 +1,16 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
+}
+
+.error {
+  color: red;
+}
+
+.customListItem {
+  list-style: none;
+}
+
+.customListItem::before {
+  content: "•";
+  margin-right: 8px;
 }

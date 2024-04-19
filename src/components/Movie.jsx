@@ -2,7 +2,7 @@ import React from "react";
 import { convertTimeStampToReadableFormat } from "../utils/dateTime";
 
 const Movie = ({ movie }) => {
-  return (
+  return movie.showingAt && (
     <li key={movie.name}>
       <h3>{movie.name}</h3>
       <p>Rating: {movie.rating}</p>
