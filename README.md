@@ -1,4 +1,4 @@
-### Movie Recommendations React App with Validation and Testing
+### Movie Recommendations React App
 This project provides a React application for recommending movies based on genre and showtime availability. It incorporates user input validation and unit tests for a robust and maintainable solution.
 
 ### Functionality
