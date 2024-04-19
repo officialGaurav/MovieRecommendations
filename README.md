@@ -15,9 +15,9 @@ Recommends movies based on user-specified genre.
 - Includes unit tests for the core functionality.
 
 ### Technologies
-React
-@testing-library/react (for testing React components)
-@testing-library/jest-dom (for additional matchers in Jest)
+- React
+- @testing-library/react (for testing React components)
+- @testing-library/jest-dom (for additional matchers in Jest)
 
 ### Project Structure
 ```
@@ -67,8 +67,8 @@ npm run dev
 npm test
 ```
 
-Enter a genre in the "Genre" field.
-Enter a time in HH:MM format (24-hour clock) in the "Time" field.
-Click the "Find Movies" button.
-The application will display recommended movies matching the criteria, sorted by rating.
-If no movies match the criteria, a message indicating "no movie recommendations" will be displayed.
+- Enter a genre in the "Genre" field.
+- Enter a time in HH:MM format (24-hour clock) in the "Time" field.
+- Click the "Find Movies" button.
+- The application will display recommended movies matching the criteria, sorted by rating.
+- If no movies match the criteria, a message indicating "no movie recommendations" will be displayed.
