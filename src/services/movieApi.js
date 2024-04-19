@@ -1,5 +1,3 @@
-/* The provided URL (https://pastebin.com/raw/cVyp3McN) doesn't include the necessary CORS headers to allow cross-origin requests from localhost
-*/
 
 export const fetchMovies = async () => {
   
