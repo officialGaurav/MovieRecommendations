@@ -1,25 +1,25 @@
 ### Movie Recommendations React App with Validation and Testing
 This project provides a React application for recommending movies based on genre and showtime availability. It incorporates user input validation and unit tests for a robust and maintainable solution.
 
-Functionality
+### Functionality
 The program takes two inputs:
 
-genre (string): The desired genre of the movie.
-time (string): The current time in the format "HH:MM".
+- genre (string): The desired genre of the movie.
+- time (string): The current time in the format "HH:MM".
 
-Features:
+### Features
 Recommends movies based on user-specified genre.
 - Filters recommendations based on showtimes at least 30 minutes after the user-provided time.
 - Sorts recommendations by rating (highest-rated first).
 - Displays validation errors for empty genre or invalid time format.
 - Includes unit tests for the core functionality.
 
-Technologies:
+### Technologies
 React
 @testing-library/react (for testing React components)
 @testing-library/jest-dom (for additional matchers in Jest)
 
-Project Structure:
+### Project Structure
 ```
 movie-recommendations/
   ├── src/
@@ -39,7 +39,7 @@ movie-recommendations/
 ```
 
 
-Explanation:
+### Explanation
 - MovieRecommendations.jsx: This file is the main component of the React application. It fetches movie data, handles user input, displays recommendations, and uses components for better organization.
 - Movie.jsx: This component displays information about a single recommended movie.
 - movieApi.js: This file handles fetching movie data from the provided API endpoint.
@@ -52,7 +52,7 @@ Explanation:
 - index.js: This file contains export all utility using one file.
 - MovieRecommendations.test.js: This file contains unit tests for the App component.
   
-Running the Application:
+### Running the Application
 - Clone or download the project
 - Install dependencies using 
 ```
