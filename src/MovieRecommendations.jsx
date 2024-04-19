@@ -38,6 +38,7 @@ function MovieRecommendations() {
 
     if (validationErrors.length > 0) {
       setError(validationErrors);
+      setRecommendations([]);
       return;
     }
 
@@ -45,6 +46,8 @@ function MovieRecommendations() {
       const recommendations = await filterMovies(moviesData, genre, time);
       setRecommendations(recommendations);
       recommendations.length ? setNotFound(false) : setNotFound(true);
+      setGenre("");
+      setTime("");
     } catch (error) {
       console.error("Error fetching recommendations movies:", error);
       setError("An error occurred while fetching movie recommendations data.");
